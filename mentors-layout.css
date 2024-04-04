@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(to bottom, #2A102F, #0E0919);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  font-family: "YS Text Web", Helvetica, Arial;
+}
+body.popup-open {
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  background: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 200px;
+  text-align: center;
+  border: none;
+  transition: color 0.35s ease-in, background-color 0.35s ease-in, opacity 0.35s ease-in;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .btn:hover {
+    color: #000000 !important;
+    background-color: #EDEAEA !important;
+  }
+  .btn:active {
+    color: #ffffff !important;
+    background-color: #7037FF !important;
+  }
+  .btn--blue {
+    background-color: #7037FF;
+    color: #ffffff;
+  }
+  .btn--blue:hover {
+    color: #ffffff !important;
+    background-color: #5B32C2 !important;
+  }
+  .btn--blue:active {
+    color: #000000 !important;
+    background-color: #FFFFFF !important;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 42px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 56px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 44px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    padding: 0 131px;
+    max-width: 1920px;
+  }
+}
+
+/*# sourceMappingURL=mentors-layout.css.map */

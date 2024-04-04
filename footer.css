@@ -1,0 +1,124 @@
+.footer {
+  background: #D7D7D7;
+  color: #000000;
+  padding: 24px 0;
+}
+.footer-content {
+  align-items: flex-end;
+}
+.footer__title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  line-height: 110%;
+  font-weight: 500;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.footer-content-list {
+  margin: 0 10px;
+}
+.footer-content-list__item {
+  font-size: 16px;
+  width: 95%;
+  padding-bottom: 16px;
+}
+.footer-content-list__item:last-child {
+  padding-bottom: 0;
+}
+.footer-content-list__item-link {
+  color: #000000;
+  transition: all 0.35s ease-in;
+  text-decoration: underline !important;
+}
+.footer-content-list__item-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.footer-content-list__item-link:active {
+  color: #7037FF;
+}
+
+.footer-logo-wrapper {
+  margin: 0 10px;
+}
+
+.footer-logo {
+  width: 137px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 45px 0;
+  }
+  .footer__title {
+    font-size: 27px;
+    margin-bottom: 32px;
+  }
+  .footer-content-list__item {
+    font-size: 18px;
+    width: 100%;
+  }
+  .footer-logo {
+    width: 196px;
+    height: 22px;
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 60px 0 5px;
+  }
+  .footer__title {
+    font-size: 36px;
+    margin-bottom: 42px;
+  }
+  .footer-content-list__item {
+    font-size: 22px;
+  }
+  .footer-logo {
+    width: 262px;
+    height: 30px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 92px 0;
+  }
+  .footer__title {
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+  .footer-content-list__item {
+    font-size: 32px;
+  }
+  .footer-logo {
+    width: 370px;
+    height: 43px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .footer {
+    padding: 120px 0;
+  }
+  .footer__title {
+    font-size: 66px;
+    margin-bottom: 80px;
+    font-weight: 500;
+  }
+  .footer-content-list__item {
+    font-size: 42px;
+  }
+  .footer-logo {
+    width: 490px;
+    height: 58px;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

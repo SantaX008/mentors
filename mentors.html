@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./mentors-layout.css">
+  <link rel="stylesheet" href="./mentors-page.css">
+  <link rel="stylesheet" href="./footer.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<section class="mentors mentors-page">
+  <div class="mentors-page-wrapper">
+    <div class="container">
+      <div class="mentors-page-inner">
+        <div class="mentors-page__sub-header">Все менторы</div>
+        <div class="mentors-page__header">
+          Найди «своего» —<br>
+          выбирай&nbsp;интересующие направления по&nbsp;тегам и&nbsp;изучай информацию
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mentors-page-content">
+    <div class="container">
+      <div class="btn js-show-popup">
+        Выберите направление
+        <span>0</span>
+      </div>
+
+      <form class="filter-container">
+        <div class="filter-container-inner">
+          <div class="filter-container__header">Выбрать направление</div>
+          <div class="js-close close-btn"></div>
+        </div>
+        <div class="mentors-page-tag-list">
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-1" type="checkbox" value="ML">
+            <label for="tag-1">#ML</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-2" type="checkbox" value="DL">
+            <label for="tag-2">#DL</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-3" type="checkbox" value="Aлгоритмы">
+            <label for="tag-3">#Aлгоритмы</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-4" type="checkbox" value="CV">
+            <label for="tag-4">#CV</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-5" type="checkbox" value="IR">
+            <label for="tag-5">#IR</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-6" type="checkbox" value="Аукционы">
+            <label for="tag-6">#Аукционы</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-7" type="checkbox" value="TS">
+            <label for="tag-7">#TS</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-8" type="checkbox" value="RecSys">
+            <label for="tag-8">#RecSys</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-9" type="checkbox" value="AfTech">
+            <label for="tag-9">#AfTech</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-10" type="checkbox" value="Information Retrieval">
+            <label for="tag-10">#Information Retrieval</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-11" type="checkbox" value="ASR">
+            <label for="tag-11">#ASR</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-12" type="checkbox" value="NLP">
+            <label for="tag-12">#NLP</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-13" type="checkbox" value="Speech Enhancement">
+            <label for="tag-13">#Speech Enhancement</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-14" type="checkbox" value="Разработка продукта">
+            <label for="tag-14">#Разработка продукта</label>
+          </div>
+          <div class="mentors-page-tag-list-item">
+            <input id="tag-15" type="checkbox" value="RL">
+            <label for="tag-15">#RL</label>
+          </div>
+        </div>
+
+        <div class="btn-wrapper">
+          <input class="btn js-show-btn js-close" type="button" value="Показать менторов">
+          <input class="btn js-reset-btn" type="reset" value="Сбросить фильтр">
+        </div>
+      </form>
+
+      <div class="mentors-list">
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Алексей</div>
+              <div class="second">Гусаков</div>
+            </div>
+            <div class="mentors-list-item__post">Технический Директор Поиска</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;машинное обучение, разработка поисковых алгоритмов, модели YandexGPT, YandexART.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: Покорил Эльбрус и&nbsp;Килиманджаро. Занимаюсь самбо и&nbsp;спортивным программированием.
+                </p>
+              </div>
+            </details>
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="ML">
+                #ML
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="DL">
+                #DL
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="Алгоритмы">
+                #Алгоритмы
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/12373972/71b35546-bb0c-418c-8a7d-4d9c07fb32a5/orig?width=360&height=360" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Сергей</div>
+              <div class="second">Овчаренко</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель группы нейросетевых технологий</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;компьютерное зрение, генеративные визуальные модели, построение процесса прикладных исследований в&nbsp;команде.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: Люблю рыбалку и&nbsp;видео про&nbsp;моду.
+                </p>
+              </div>
+            </details>
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="CV">
+                #CV
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="DL">
+                #DL
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/fc21eb7e-cb3b-40e2-9f93-cdfb5f03ecc9/orig?width=360&height=360" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Николай</div>
+              <div class="second">Савушкин</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель службы Рекомендательных Технологий</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;информационный поиск, рекомендательные системы, production&nbsp;ML, нейросетевая персонализация.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: Увлекаюсь картингом, формулой-1, теорией игр. Окончил музыкальную школу по&nbsp;классу скрипки.
+                </p>
+              </div>
+            </details>
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="ML">
+                #ML
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="DL">
+                #DL
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="IR">
+                #IR
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Василий</div>
+              <div class="second">Астахов</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель службы перспективных исследований и&nbsp;дизайна механизмов</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;Машинное обучение, нежадная оптимизация, алгоритмы аукционов.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: семья, фантастика, настольные игры и&nbsp;плавание.
+                </p>
+              </div>
+            </details>
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="ML">
+                #ML
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="Алгоритмы">
+                #Алгоритмы
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="Аукционы">
+                #Аукционы
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Константин</div>
+              <div class="second">Лахман</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель отдела компьютерного зрения и&nbsp;ML приложений</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  <!--                  Отвечает за&nbsp;AI в рекламе, продуктовые метрики качества, генеративные модели-->
+                </p>
+                <p>
+                  <!--                  Хобби/fun&nbsp;fact: плавание на&nbsp;открытой воде, классическая гитара, художественные переводы с&nbsp;немецкого языка-->
+                </p>
+              </div>
+            </details>
+
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/d880addc-3ba9-4a2d-bf6b-204e8f4258d5/orig?width=360&height=360" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Алексей</div>
+              <div class="second">Поспелов</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель группы брендформанса и&nbsp;разметок качества рекламы</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;AI в рекламе, продуктовые метрики качества, генеративные модели.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: плавание на&nbsp;открытой воде, классическая гитара, художественные переводы с&nbsp;немецкого языка.
+                </p>
+              </div>
+            </details>
+
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="Разработка продукта">
+                #Разработка продукта
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="ML">
+                #ML
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="Алгоритмы">
+                #Алгоритмы
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Алексей</div>
+              <div class="second">Колесов</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель отдела NLP</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  <!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+                  <!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+                  <!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+                  <!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Вадим</div>
+              <div class="second">Любаненко</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель отдела инфосценария</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  <!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+                  <!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+                  <!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+                  <!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Никита</div>
+              <div class="second">Семёнов</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель направления службы ML&nbsp;R&D</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  <!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+                  <!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+                  <!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+                  <!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/07843621-f9c8-46f0-911d-12ed83db972a/orig?width=360&height=360" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Петр</div>
+              <div class="second">Вытовтов</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель группы ML в&nbsp;Яндекс Погоде</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;компьютерное зрение, прогнозирование видео и&nbsp;временных рядов.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: Пишу стихи и&nbsp;фотографирую города.
+                </p>
+              </div>
+            </details>
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="DL">
+                #DL
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="CV">
+                #CV
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="TS">
+                #TS
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Андрей</div>
+              <div class="second">Мищенко</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель отдела качества рекламы</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;машинное обучение, рекламные технологии, теория вероятностей и&nbsp;математическая статистика.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: Увлекаюсь бадминтоном, путешествиями, настольными играми, а&nbsp;также олимпиадными задачами по&nbsp;математике.
+                </p>
+              </div>
+            </details>
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="DL">
+                #ML
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="RecSys">
+                #RecSys
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="AfTech">
+                #AfTech
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Максим</div>
+              <div class="second">Кузин</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель группы семантического поиска</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  <!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+                  <!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+                  <!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+                  <!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/12373972/403b0053-33f1-46e9-924e-55b227171d4c/orig?width=360&height=360" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Кирилл</div>
+              <div class="second">Хрыльченко</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель команды исследования перспективных рекомендательных технологий.</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;рекомендательные системы, ранжирование, кандидатогенерация, нейросетевые модели.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: Окончил музыкальную школу. Люблю спортивную мафию, веду телеграм-канал про&nbsp;рексистемы @inforetriever.
+                </p>
+              </div>
+            </details>
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="RecSys">
+                #RecSys
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="DL">
+                #DL
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="Information Retrieval">
+                #Information Retrieval
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10704932/1bc81de0-7a7e-4834-bec7-1648c2944c9a/orig?width=360&height=360" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Роман</div>
+              <div class="second">Исаченко</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель подгруппы дискриминативного анализа изображений</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  <!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+                  <!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+                  <!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+                  <!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Николай</div>
+              <div class="second">Скачков</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель службы качества MT</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  <!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+                  <!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+                  <!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+                  <!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Жамшид</div>
+              <div class="second">Рузиев</div>
+            </div>
+            <div class="mentors-list-item__post">Ведущий разработчик группы нейросетевого поиска предпочтений</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  <!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+                  <!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+                  <!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+                  <!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Никита</div>
+              <div class="second">Рыжиков</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель Службы технологий голосового ввода</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;машинное обучение, разпознавание речи, ASR, keyword spotting, speech enhancement, голосовая биометрия.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: "Первые два образования: физик-океанолог и&nbsp;физик-нефтянник. Плавал по&nbsp;океанам около Антарктиды. В&nbsp;отпуска езжу кататься на доске: сёрф и&nbsp;сноуборд.
+                </p>
+              </div>
+            </details>
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="ML">
+                #ML
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="DL">
+                #DL
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="ASR">
+                #ASR
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="NLP">
+                #NLP
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="Speech Enhancement">
+                #Speech Enhancement
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Дмитрий</div>
+              <div class="second">Бабаев</div>
+            </div>
+            <div class="mentors-list-item__post">Помогаю разным командам Геосервисов с&nbsp;ML</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+                  Отвечает за&nbsp;машинное обучение, дизайн ML систем, обучение с&nbsp;подкреплением, анализ событийных данных, компьютерное зрение.
+                </p>
+                <p>
+                  Хобби/fun&nbsp;fact: Катаюсь на сноуборде. Увлекаюсь дизайном и разработкой компьютерных игр.
+                </p>
+              </div>
+            </details>
+            <div class="mentors-list-item__tag-list">
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="ML">
+                #ML
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="DL">
+                #DL
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="RL">
+                #RL
+              </div>
+              <div class="mentors-list-item__tag-list-item"
+                   data-direction="CV">
+                #CV
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Александр</div>
+              <div class="second">Боймель</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель службы генезиса</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+<!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+<!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+<!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+<!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/12373972/9197574b-1c3b-4391-a901-b5a02fdf4f8d/orig?width=360&height=360" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Андрей</div>
+              <div class="second">Данильченко</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель Службы базового качества Гео</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+<!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+<!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+<!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+<!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Александр</div>
+              <div class="second">Шуваев</div>
+            </div>
+            <div class="mentors-list-item__post">Руководитель службы генезиса</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+<!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+<!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+<!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+<!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="mentors-list-item">
+          <img class="mentors-list-item__icon" width="180" height="180" src="https://avatars.mds.yandex.net/get-lpc/10116223/b77c6e51-8b6e-46d1-b25b-caf9cb6da8df/orig?width=360&height=361" alt=""/>
+          <div class="mentors-list-item-inner">
+            <div class="mentors-list-item__name">
+              <div class="first">Владимир</div>
+              <div class="second">Платонов</div>
+            </div>
+            <div class="mentors-list-item__post">Помогаю разным командам Геосервисов с&nbsp;ML</div>
+            <details>
+              <summary class="mentors-list-item-cut">
+                <div>Больше о менторе</div>
+                <div class="mentors-list-item-cut__icon"></div>
+              </summary>
+
+              <div class="mentors-list-item-cut__content">
+                <p>
+<!--                  Отвечает за&nbsp;качество Поиска и&nbsp;развитие-->
+<!--                  ML&nbsp;в&nbsp;продуктах компании: Геопоиск, Алиса,-->
+<!--                  поисковые алгоритмы и&nbsp;другие сервисы компании.-->
+                </p>
+                <p>
+<!--                  Хобби/fun&nbsp;fact: Серебряный призёр чемпионата мира по&nbsp;программированию ACM&nbsp;ICPC.-->
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+      <a href="https://lpc.yandex.ru/promo/.sandbox/irina-tsekh/ml-academy" class="btn main-btn">Назад</a>
+    </div>
+  </div>
+
+
+</section>
+
+<section class="footer">
+  <div class="container">
+    <h4 class="footer__title">К кому за подробностями</h4>
+    <div class="footer-content">
+      <div class="footer-content-list">
+        <div class="footer-content-list__item">
+          <a href="https://staff.yandex-team.ru/mkrasnaya" target="_blank" rel="noopener noreferrer nofollow" class="footer-content-list__item-link">Маша Красная</a>, Change Management Partner
+        </div>
+        <div class="footer-content-list__item">
+          <a href="https://staff.yandex-team.ru/gribanovaa" target="_blank" rel="noopener noreferrer nofollow" class="footer-content-list__item-link">Cаша Грибанова</a>, L&D Lead
+        </div>
+      </div>
+      <div class="footer-logo-wrapper">
+        <img class="footer-logo" width="400" height="95" src="https://avatars.mds.yandex.net/get-lpc/10116223/72cd463d-abf9-40d5-85a1-69e7f2b77e3f/orig?width=983&height=116" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../static/mentors.js"></script>
+</body>
+</html>
